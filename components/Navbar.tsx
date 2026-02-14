@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
@@ -11,9 +12,18 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="container-custom py-6 flex justify-between items-center"
     >
-      <div className="text-xl font-semibold tracking-tight">
-        DK
-      </div>
+       <Link href="/" className="flex items-center">
+  <div className="relative w-16 h-16 rounded-full overflow-hidden bg-white/70 backdrop-blur-lg border border-neutral-200 shadow-md hover:scale-105 transition">
+    <Image
+      src="/logo.png"
+      alt="Deepak Logo"
+      fill
+      className="object-cover"
+      priority
+    />
+  </div>
+</Link>
+
 
       <div className="hidden md:flex gap-8 text-sm font-medium text-neutral-700">
         <Link href="/">Home</Link>
