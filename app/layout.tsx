@@ -31,16 +31,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable}`}>
-      <body className="font-sans bg-white text-neutral-900">
-        <div className={`${inter.variable} font-sans`}>
-          <div className="fixed inset-0 -z-10 bg-grid opacity-30" />
-          <Navbar />
-          {children}
-        </div>
-      </body>
-    </html>
-  );
+  <html lang="en" className={`${inter.variable}`}>
+    <body className="font-sans bg-[#f8fafc] text-neutral-900">
+      <div className="relative">
+        <div className="fixed inset-0 -z-10 bg-grid opacity-10 pointer-events-none" />
+        <Navbar />
+        {children}
+      </div>
+    </body>
+  </html>
+);
+
 }
 
 import { Space_Grotesk } from "next/font/google";
