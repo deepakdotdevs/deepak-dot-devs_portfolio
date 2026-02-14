@@ -33,10 +33,19 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable}`}>
       <body className="font-sans bg-white text-neutral-900">
-        <div className="fixed inset-0 -z-10 bg-grid opacity-30" />
-        <Navbar />
-        {children}
+        <div className={`${inter.variable} font-sans`}>
+          <div className="fixed inset-0 -z-10 bg-grid opacity-30" />
+          <Navbar />
+          {children}
+        </div>
       </body>
     </html>
   );
 }
+
+import { Space_Grotesk } from "next/font/google";
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-display",
+});
