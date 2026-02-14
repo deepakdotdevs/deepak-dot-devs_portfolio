@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="container-custom text-center py-24">
+    <section className="container-custom text-center py-28">
       <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-5xl md:text-6xl font-semibold leading-tight"
+        className="text-5xl md:text-6xl font-semibold leading-tight tracking-tight"
       >
         Hey, I'm Deepak.
         <br />
@@ -22,9 +22,9 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="mt-6 text-neutral-600 max-w-xl mx-auto"
+        className="mt-6 text-neutral-600 max-w-xl mx-auto text-lg"
       >
-        Full-stack developer blending clean design with solid backend engineering.
+        A full-stack developer blending clean design with solid backend engineering.
       </motion.p>
     </section>
   );

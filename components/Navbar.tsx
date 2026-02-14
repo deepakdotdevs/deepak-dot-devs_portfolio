@@ -11,9 +11,11 @@ export default function Navbar() {
       transition={{ duration: 0.6 }}
       className="container-custom py-6 flex justify-between items-center"
     >
-      <div className="text-xl font-semibold">DK</div>
+      <div className="text-xl font-semibold tracking-tight">
+        DK
+      </div>
 
-      <div className="flex gap-8 text-sm font-medium">
+      <div className="hidden md:flex gap-8 text-sm font-medium text-neutral-700">
         <Link href="/">Home</Link>
         <Link href="/about">About</Link>
         <Link href="/projects">Projects</Link>
