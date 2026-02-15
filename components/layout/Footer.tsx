@@ -1,24 +1,56 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Github, Linkedin, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-neutral-200 py-20">
-      <div className="container-custom grid md:grid-cols-4 gap-12">
+<footer className="bg-white border-t border-neutral-200 pt-8 pb-20">
+          <div className="container-custom grid md:grid-cols-4 gap-12 items-start">
 
-        {/* Left Side */}
-        <div>
-          <div className="text-3xl font-bold mb-6">K</div>
+              {/* Left Side */}
+          <div className="flex flex-col">
 
-          <p className="text-neutral-600 text-sm leading-relaxed mb-6">
-            I'm Deepak — a Full-stack developer who builds scalable app products.
-            Thanks for stopping by.
-          </p>
+  {/* Logo */}
+  <Link href="/" className="flex items-center mb-10 -mt-2">
 
-          <p className="text-xs text-neutral-500">
-            © {new Date().getFullYear()} Deepak. All rights reserved.
-          </p>
-        </div>
+      <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white border border-neutral-200 shadow-md hover:scale-105 transition">
+      <svg
+        viewBox="0 0 100 100"
+        className="w-8 h-8"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M30 20 Q75 20 75 50 Q75 80 30 80"
+          stroke="black"
+          strokeWidth="10"
+          strokeLinecap="round"
+        />
+        <line
+          x1="30"
+          y1="20"
+          x2="30"
+          y2="80"
+          stroke="black"
+          strokeWidth="10"
+          strokeLinecap="round"
+        />
+      </svg>
+    </div>
+  </Link>
+
+  {/* Text */}
+  <p className="text-neutral-600 text-sm leading-relaxed mb-6">
+    I'm Deepak — a Full-stack developer who builds scalable app products.
+    Thanks for stopping by.
+  </p>
+
+  <p className="text-xs text-neutral-500">
+    © {new Date().getFullYear()} Deepak. All rights reserved.
+  </p>
+
+</div>
+
 
         {/* General */}
         <div>
@@ -48,13 +80,13 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex gap-4">
-            <a href="#" className="p-2 bg-black text-white rounded-full">
+            <a href="https://x.com/im_deepak_12" className="p-2 bg-black text-white rounded-full">
               <Twitter size={16} />
             </a>
-            <a href="#" className="p-2 bg-black text-white rounded-full">
+            <a href="https://www.linkedin.com/in/deepak-jangid-89954a317/" className="p-2 bg-black text-white rounded-full">
               <Linkedin size={16} />
             </a>
-            <a href="#" className="p-2 bg-black text-white rounded-full">
+            <a href="https://github.com/deepakdotdevs" className="p-2 bg-black text-white rounded-full">
               <Github size={16} />
             </a>
           </div>

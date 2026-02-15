@@ -21,7 +21,7 @@ export default function Newsletter() {
   };
 
   return (
-    <section className="mt-1 py-2">
+    <section className="mt-1 py-8">
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -149,7 +149,7 @@ export default function Newsletter() {
                     </span>
                   ) : (
                     "Subscribe"
-                  )}
+                  )}    
                 </button>
               </div>
             </form>
